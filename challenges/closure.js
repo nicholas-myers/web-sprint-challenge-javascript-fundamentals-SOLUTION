@@ -17,8 +17,24 @@ function myFunction() {
 myFunction();
 
 // Explanation: 
-
+// Closure is way to understand how different functions can see outside themselves to the global scope and everything in curly braces is enclosed hence closure. Like a one way mirror.
 
 /* Task 2: Counter */
 
 /* Create a function called `summation` that accepts a parameter and uses a counter to return the summation of that number. For example, `summation(4)` should return 10 because 1+2+3+4 is 10. */
+
+function summation(num) {
+  let count = 0;
+  for (let i = 0; i < num; i++) {
+    // console.log(i + 1)
+    function addIndex(num) {
+      return num + 1
+    }
+  //  console.log(addIndex(i))
+   count = count + addIndex(i)
+    
+  }
+  return count
+}
+
+console.log(summation(4))

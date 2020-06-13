@@ -25,15 +25,22 @@ Commit your code regularly and meaningfully. This helps both you (in case you ev
 
 Be prepared to demonstrate your understanding of this week's concepts by answering questions on the following topics. You might prepare by writing down your own answers before hand.
 
-1. Briefly compare and contrast `.forEach` & `.map` (2-3 sentences max)
+1. Describe the biggest difference between .forEach & .map.
+.forEach iterates through the array but does not create a new array. .map will iterate and return a new array.
 
-2. Explain the difference between a callback and a higher order function.
+2. What is the difference between a function and a method?
+a method is a function nested in an object. everything is an object. a function would be something outside of an object probably on the global scope
 
 3. What is closure?
+Closure is everything enclosed inside curly brackets, ie if a function is nested in another function, the inner function is contained by the outer function. inner functions can see outside themselves all the way to the global scope, anything outside the function cannot see inside the function.
 
 4. Describe the four rules of the 'this' keyword.
 
+a. window/global binding, this has no context so it will show all the methods for JS b. implicit Binding: the this function is invoked using dot notation and refers to the object to the left of the dot. c. Explicit Binding: can call, apply or blind, you can pass through your objects as arguments for your function d. New Binding: create a generic object where this points to all the attributes you want to assign to other New Object objects that relate back to the parent object
+
 5. Why do we need super() in an extended class?
+
+super is what tells the parent to bind to the child class
 
 You are expected to be able to answer questions in these areas. Your responses contribute to your Sprint Challenge grade. 
 
@@ -59,12 +66,12 @@ Your finished project must include all of the following requirements:
 #### Task A: Objects and Arrays
 
 Test your knowledge of advanced array methods and callbacks.
-* [ ] Use the [arrays-callbacks.js](challenges/arrays-callbacks.js) link to get started.  Read the instructions carefully!
+* [x] Use the [arrays-callbacks.js](challenges/arrays-callbacks.js) link to get started.  Read the instructions carefully!
 
 #### Task B: Closure
 
 This challenge takes a look at closures as well as scope. 
-* [ ] Use the [closure.js](challenges/closure.js) link to get started. Read the instructions carefully!
+* [x] Use the [closure.js](challenges/closure.js) link to get started. Read the instructions carefully!
 
 #### Task C: Prototypes
 
